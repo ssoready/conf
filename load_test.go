@@ -24,9 +24,9 @@ func ExampleLoad() {
 
 	// this is the code you would actually write in the real world
 	cfg := struct {
-		Username string        `conf:"Username"`
+		Username string        `conf:"Username,noredact"`
 		Password string        `conf:"Password"`
-		Timeout  time.Duration `conf:"Timeout"`
+		Timeout  time.Duration `conf:"Timeout,noredact"`
 	}{
 		Timeout: time.Minute,
 	}
@@ -46,14 +46,14 @@ func ExampleLoad_advanced() {
 	os.Args = []string{"example", "-h"}
 
 	type subConfig struct {
-		FastMode bool          `conf:"go-fast" usage:"do things faster"`
-		Timeout  time.Duration `conf:"Timeout"`
+		FastMode bool          `conf:"go-fast,noredact" usage:"do things faster"`
+		Timeout  time.Duration `conf:"Timeout,noredact"`
 	}
 
 	cfg := struct {
-		ClientConfig subConfig `conf:"ClientConfig"`
-		ServerConfig subConfig `conf:"the-server-config"`
-		Username     string    `conf:"my-user-name"`
+		ClientConfig subConfig `conf:"ClientConfig,noredact"`
+		ServerConfig subConfig `conf:"the-server-config,noredact"`
+		Username     string    `conf:"my-user-name,noredact"`
 	}{
 		ClientConfig: subConfig{FastMode: true},
 		ServerConfig: subConfig{Timeout: time.Hour},
