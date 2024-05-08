@@ -1,6 +1,6 @@
 # conf
 
-[![Go Reference](https://pkg.go.dev/badge/github.com/ucarion/conf.svg)](https://pkg.go.dev/github.com/ucarion/conf)
+[![Go Reference](https://pkg.go.dev/badge/github.com/ssoready/conf.svg)](https://pkg.go.dev/github.com/ssoready/conf)
 
 `conf` is a small utility for configuring Golang programs. It addresses three
 things the stdlib `flag` package makes a bit difficult:
@@ -24,7 +24,7 @@ package main
 import (
    "fmt"
 
-   "github.com/ucarion/conf"
+   "github.com/ssoready/conf"
 )
 
 func main() {
@@ -59,7 +59,7 @@ redacted config {alan }
 You can start using `conf` by running:
 
 ```bash
-go get github.com/ucarion/conf
+go get github.com/ssoready/conf
 ```
 
 ## Usage
@@ -115,7 +115,7 @@ import (
    "fmt"
    "time"
 
-   "github.com/ucarion/conf"
+   "github.com/ssoready/conf"
 )
 
 func main() {

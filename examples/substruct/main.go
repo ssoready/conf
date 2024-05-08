@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/ucarion/conf"
+	"github.com/ssoready/conf"
 )
 
 func main() {

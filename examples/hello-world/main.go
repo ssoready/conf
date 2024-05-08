@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/ucarion/conf"
+	"github.com/ssoready/conf"
 )
 
 func main() {

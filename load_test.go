@@ -9,7 +9,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ucarion/conf"
+	"github.com/ssoready/conf"
 )
 
 func ExampleLoad() {

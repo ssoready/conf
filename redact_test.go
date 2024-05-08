@@ -6,7 +6,7 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 	"github.com/google/go-cmp/cmp/cmpopts"
-	"github.com/ucarion/conf"
+	"github.com/ssoready/conf"
 )
 
 func ExampleRedact() {

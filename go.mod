@@ -1,4 +1,4 @@
-module github.com/ucarion/conf
+module github.com/ssoready/conf
 
 go 1.18
 
